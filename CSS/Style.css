@@ -1,0 +1,835 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family:serif
+}
+.head{
+    width: 100%;
+    height: 50px;
+    position: fixed;
+    background-color: rgba(196, 191, 191, 0.603);
+    z-index: 1;
+}
+.logo{
+    width: 92px;
+    height: 50px;
+    margin-left: 50px;
+    float: left ;
+}
+.list{
+    list-style: none ;
+margin-right: 120px;
+
+}
+.list li {
+    display: inline-block;
+    float: right;
+    margin-left: 25px;
+    color: white;
+    font-size: 21px;
+   
+}
+.list li a{
+    color: rgb(88, 88, 88);
+   text-decoration: none;
+   padding: 10px;
+
+}
+.list li a:hover{
+    /* color: rgb(139, 153, 188); */
+   color: rgb(64, 111, 239);
+}
+.blog{
+    display: block;
+    background-color: rgb(64, 111, 239);
+    color: white;
+    padding: 0.5em 1em;
+    position: absolute;
+    visibility: hidden;
+    right: 28%;
+    top: 140%;
+}
+.li-b:hover .blog{
+    visibility: visible;
+} 
+
+.home{
+    height: 100vh;
+    background-image: url(../images/hpu.jpg);
+    background-size: cover;
+    position: relative;
+
+}
+    .overlay{
+        position: absolute;
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(0, 0, 0, 0.5);
+
+    }
+.hom-content{
+text-align: center;
+/* hero  image  */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+transform: translate(-50%,-50%);
+}
+.home-title{
+    color: white;
+    font-size: 60px;
+}
+.home-title:hover{
+    /* color: rgb(139, 153, 188); */
+    color: rgb(64, 111, 239);
+    letter-spacing: 3px;
+}
+.home-par{
+    margin: 20px 0px;
+    color: antiquewhite;
+    letter-spacing: 1px;
+    font-size: larger;
+}
+.btn{
+    width: 150px;
+    padding: 15px 0px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 17px;
+    text-transform: capitalize;
+}
+.home-btn-start{
+margin-right: 10px;
+
+}
+.home-btn-learn{
+   background-color: rgb(64, 111, 239);
+   color: #fff;
+    }
+    .btn:hover{
+        opacity: 0.7;
+    }
+/* start Web */
+
+.title{
+    font-size: 58px;
+    text-align: center;
+    margin-top: 100px;
+
+}
+.line{
+    width: 80px;
+    height: 4px;
+    background-color:rgb(64, 111, 239);
+    margin: auto;
+ margin-top: -2px;
+}
+.web-container{
+    width: 75%;
+    margin: auto;
+    height: 100vh;
+ 
+}
+.web-content{
+    margin-top: 15%;
+    }
+    .web-item{
+        float: left;
+        width: 30%;
+        padding: 10px 15px;
+        text-align: center;
+        position: relative;
+        border: 1px solid black ;
+    }
+    .dd{
+        margin: 0px 5%;
+    }
+    .web-item i{
+        margin: 20px 0;
+        color: rgb(64, 111, 239);
+    }
+    .web-item .tit{
+        font-size:large;
+        padding: 10px;
+    }
+    .web-item .tt{
+        color: rgb(64, 111, 239);
+        font-size: 17px;
+        padding: 10px;
+    }
+    .web-item p{
+        color: gray;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    
+.web-item::after{
+    position: absolute;
+    content: "";
+
+    width: 0;
+    height: 0;
+
+    top: 0;
+    left: 0;
+
+    background-color: rgb(0, 0, 0);
+    opacity: 0;
+
+}
+/* الوضع التاني يلي بدو يصير  */
+.web-item:hover::after{
+ width: 100%;
+ height: 100%;
+ opacity: 0.7;
+transition: 2s;
+z-index: -1;
+}
+
+/* end Web */
+/* start Featured */
+
+.fea-container{
+    width: 75%;
+    margin: auto;
+}
+.fea-content{
+    margin-top: 10%;
+   
+    }
+.fea-item{
+    float: left;
+    width: 30%;
+    padding: 12px 16px;
+    text-align: center;
+    position: relative;
+}
+.dd{
+    margin: 0px 5%;
+}
+.fea-imag{
+    width: 90%;
+margin: auto;
+position: relative;
+/* background-color: brown; */
+}
+.fea-imag img{
+    width: 100%;
+}
+
+.fea-overlay{
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    
+    background-color: rgb(0, 0, 0, 0.5);
+    
+    visibility: hidden;
+    }
+    
+    .fea-item:hover  .fea-overlay{
+        visibility: visible;
+    
+    }
+    
+    .fea-overlay a{
+        display: block;
+        width: 40px;
+        height: 40px;
+        background-color:rgb(64, 111, 239);
+        color: rgb(8, 8, 106);
+        font-size: 19px;
+     margin-left: 50%;
+  
+    }
+    .fea-info{
+margin-top: 50px;
+      
+    }
+.fea-info p{
+    color:rgb(64, 111, 239);
+    text-transform:uppercase;
+    font-size: 20px;
+}
+.fea-info h3{
+    color: white;
+}
+    
+    .fea-overlay a i{
+        line-height: 40px;
+    }
+    /* end  Featured */
+    /* start Offer */
+    
+    .line{
+        width: 80px;
+        height: 4px;
+        background-color:rgb(64, 111, 239);
+        margin: auto;
+     margin-top: -2px;
+    }
+    .offer-container{
+        width: 75%;
+        margin: auto;
+        height: 150vh;
+     
+    }
+    .offer-content{
+        margin-top: 15%;
+        }
+        .offer-item{
+            float: left;
+            width: 30%;
+            padding: 25px 25px;
+            /* text-align: left; */
+            position: relative;
+            border: 1px solid black ;
+        }
+        .dd{
+            margin: 0px 5%;
+        }
+        .oo {
+            margin: 5% 0px;
+        }
+        .ll{
+            margin: 10% 5%;
+        }
+        .kk{
+            margin: 10% 0px;
+        }
+    
+        .offer-item i{
+            margin: 20px ;
+            color: rgb(64, 111, 239);
+    float: left;   
+   
+        }
+        .offer-item .tit{
+            font-size:large;
+            padding: 10px;
+   
+        }
+        
+        .offer-item p{
+            color: gray;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    
+        
+    .offer-item::after{
+        position: absolute;
+        content: "";
+    
+        width: 0;
+        height: 0;
+    
+        top: 0;
+        left: 0;
+    
+        background-color: rgb(0, 0, 0);
+        opacity: 0;
+        
+    }
+    /* الوضع التاني يلي بدو يصير  */
+    .offer-item:hover::after{
+     width: 100%;
+     height: 100%;
+     opacity: 0.7;
+    transition: 1s;
+    z-index: -1;
+    color: white;
+    }
+    .offer-item:hover  .offer-info{
+        color: white;
+    }
+    .offer-i{
+        float: left;
+        width: 30%;
+        padding: 25px 25px;
+        /* text-align: left; */
+        position: relative;
+        border: 1px solid black ;
+    }
+    .offer-i i{
+        margin: 20px 20px;
+        color: rgb(64, 111, 239);
+float: left;      
+    }
+    .offer-i .tit{
+        font-size:large;
+        padding: 10px;
+
+    }
+    
+    .offer-i p{
+        color: gray;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .offer-i:hover .tit{
+     visibility: hidden;
+    }
+    /*  */
+    .us-container{
+        width: 75%;
+        margin: auto;
+    }
+    .us-line{
+        width: 80px;
+        height: 4px;
+        background-color:rgb(64, 111, 239);
+        margin-left: 375px;
+     margin-top: -2px;
+    }
+    .us-container{
+        width: 75%;
+        margin: auto;
+        height: 150vh;
+    }
+    .us-info{
+        display: inline-block;
+        margin: 55px 365px;
+        width: 45%;
+    }
+    .us-parg{
+        display: inline-block;
+        margin-top: 20px;
+    }
+     .circle{
+        display:inline-block;
+        justify-content: center;
+        align-items: center;
+        width: 25px;
+        height: 20px;
+        border: 1px solid rgb(64, 111, 239); 
+        border-radius: 50%;
+        text-align: center;
+    }
+ .circle i{
+color: rgb(64, 111, 239) ;
+ }
+ .check-text{
+    display: inline;
+    font-size: 15px;
+    color: gray;
+    margin-left: 1px; 
+ }
+ .us-item{
+    width: 40%;
+    background-color: rgb(245, 241, 241);
+    padding: 12px 13px;
+    text-align: center;
+}
+.us-point {
+    margin: 10px 200px;
+  
+}
+.us-div{
+        display: inline-block;
+        width: 10px;
+        height: 10px;
+        border: 1px ;
+        background-color: #ccc;
+        border-radius: 50%;
+        margin-right:2px
+}
+/*  Backgrond Start */
+.bac-container{
+    width: 100%;
+    margin: auto;
+    height: 40vh;
+    background-image: url(../images/hpu.jpg);
+   background-attachment: fixed;
+    background-size: cover;
+    position: relative;
+
+    
+}
+
+.bac-overlay{
+    position: absolute;
+width: 100%;
+height: 100%;
+
+background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Backgrond End */
+
+    /* start table */
+    .table-container{
+        width: 75%;
+        margin: auto;
+        height: 100vh;
+     
+    }
+    .table-content{
+        margin-top: 10%;
+        }
+        .table-item{
+            float: left;
+            width: 30%;
+            height: 250px;
+           /* padding: 40px 25px; */
+            text-align: center;
+            position: relative;
+            border: 1px solid black ;
+        }
+        .dd{
+            margin: 0px 5%;
+        }
+        .table-info{
+            line-height: 25px;
+        }
+        .table-info p{
+            color: gray;
+        }
+        .t-circle{
+        display:inline-flex;
+        justify-content: center;
+        align-items: center;
+        width: 70px;
+        height: 60px;
+        border: 1px solid rgb(64, 111, 239); 
+        border-radius: 50%;
+        }
+      .t-circle h1{
+        text-align: center;
+        font-size: 40px;
+        color:rgb(64, 111, 239) ;
+      }
+
+.purch{
+    display:inline-flex;
+    justify-content: center;
+    width: 90px;
+    height: 25px;
+    border: 1px solid rgb(64, 111, 239); 
+margin-top: 20px;
+}
+
+.table-item::after{
+    position: absolute;
+    content: "";
+
+    width: 100%;
+    height: 0;
+
+    top: 0;
+    left: 0;
+
+    background-color: rgb(0, 0, 0);
+    opacity: 0;
+    
+}
+.table-item:hover::after{
+    width: 100%;
+    height: 100%;
+    opacity: 0.7;
+   transition: 1s;
+   z-index: -1;
+   }
+   .table-item:hover  .table-tit{
+    color: rgb(226, 48, 48);
+}
+
+   .table-item{
+       float: left;
+       width: 30%;
+       padding: 25px 25px;
+       /* text-align: left; */
+       position: relative;
+       border: 1px solid black ;
+   }
+        /* end table */
+
+        /*  Backgrond Start */
+.bac2-container{
+    width: 100%;
+    margin: auto;
+    height: 40vh;
+    background-image: url(../images/hpu.jpg);
+   background-attachment: fixed;
+    background-size: cover;
+    position: relative;
+    /* position: fixed; */
+}
+
+.bac2-overlay{
+    position: absolute;
+width: 100%;
+height: 100%;
+background-color: rgba(0, 0, 0, 0.8)
+}
+/* Backgrond End */
+
+/* Start Team */
+.team-container{
+    width: 75%;
+    margin: auto;
+    height: 100vh;
+ 
+}
+.title{
+    font-size: 58px;
+    text-align: center;
+
+}
+.line{
+    width: 80px;
+    height: 4px;
+    background-color:blue;
+    margin: auto;
+ margin-top: -2px;
+}
+
+.team-content{
+margin-top: 10%;
+}
+.team-item{
+    float: left;
+    width: 30%;
+    background-color: rgb(175, 175, 175);
+    padding: 12px 16px;
+    text-align: center;
+    position: relative;
+}
+.dd{
+    margin: 0px 5%;
+}
+.team-imag{
+    width: 90%;
+margin: auto;
+position: relative;
+/* background-color: brown; */
+}
+.team-imag img{
+    width: 100%;
+}
+.team-overlay{
+position: absolute;
+top: 0;
+right: 0;
+left: 0;
+bottom: 0;
+
+background-color: rgb(0, 0, 0, 0.5);
+
+visibility: hidden;
+}
+
+.team-item:hover  .team-overlay{
+    visibility: visible;
+
+}
+
+.team-overlay a{
+    display: block ;
+    width: 40px;
+    height: 40px;
+    background-color: rgb(127, 191, 255);
+    color: white;
+    font-size: 19px;
+    margin-left: auto;
+}
+
+.team-overlay a i{
+    line-height: 40px;
+}
+.team-info-titel{
+    padding: 11px 0px;
+    text-transform: capitalize;
+}
+.team-info-p{
+    color: rgb(97, 96, 96);
+    text-transform: uppercase;
+}
+.team-item:hover  .team-info-titel{
+    color: white;
+}
+.team-item:hover .team-info-p{
+color: blue;
+}
+
+/* الوضع الابتدائي */
+.team-item::after{
+    position: absolute;
+    content: "";
+
+    width: 100%;
+    height: 0;
+
+    top: 0;
+    left: 0;
+
+    background-color: rgb(19, 18, 18);
+    opacity: 0;
+
+}
+/* الوضع التاني يلي بدو يصير  */
+.team-item:hover::after{
+ width: 100%;
+ height: 100%;
+ opacity: 0.5;
+transition: 2s;
+}
+
+/* End Team  */
+
+/* Start News */
+.news-container{
+    width: 75%;
+    margin: auto;
+    height: 150vh;
+ 
+}
+.title{
+    font-size: 58px;
+    text-align: center;
+    
+
+}
+.line{
+    width: 80px;
+    height: 4px;
+    background-color:blue;
+    margin: auto;
+ margin-top: -2px;
+}
+
+.news-content{
+margin-top: 10%;
+}
+.news-item{
+    float: left;
+    width: 30%;
+    height: 650px;
+    background-color: rgb(238, 217, 217);
+    padding: 20px 16px;
+    text-align: center;
+    position: relative;
+   
+}
+.dd{
+    margin: 0px 5%;
+}
+.news-imag{
+    width: 90%;
+margin: auto;
+position: relative;
+/* background-color: brown; */
+}
+.news-imag img{
+    width: 100%;
+}
+.news-overlay{
+position: absolute;
+top: 0;
+right: 0;
+left: 0;
+bottom: 0;
+
+background-color: rgb(0, 0, 0, 0.5);
+
+visibility: hidden;
+}
+
+.news-item:hover  .news-overlay{
+    visibility: visible;
+
+}
+
+.news-info-titel{
+    padding: 11px 0px;
+    text-transform: capitalize;
+}
+.news-info-p{
+    color: rgb(97, 96, 96);
+    text-transform: uppercase;
+    padding-top: 50px;
+}
+.news-info{
+
+}
+.news-info-t{
+    color: blue;
+    font-size: large;
+   text-align: left ;
+   padding-top: 120px;
+}
+.news-item:hover  .news-info-titel{
+    color: white;
+}
+.news-item:hover .news-info-p{
+color: blue;
+}
+
+/* الوضع الابتدائي */
+.news-item::after{
+    position: absolute;
+    content: "";
+
+    width: 100%;
+    height: 0;
+
+    top: 0;
+    left: 0;
+
+    background-color: rgb(19, 18, 18);
+    opacity: 0;
+
+}
+/* الوضع التاني يلي بدو يصير  */
+.news-item:hover::after{
+ width: 100%;
+ height: 100%;
+ opacity: 0.5;
+transition: 2s;
+}
+
+/* End News  */
+
+        /*  Backgrond Start */
+        .bac3-container{
+            width: 100%;
+            margin: auto;
+            height: 40vh;
+            background-image: url(../images/hpu.jpg);
+           background-attachment: fixed;
+            background-size: cover;
+            position: relative;
+        }
+        
+        .bac3-overlay{
+            position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.8)
+        }
+        .bac2 {
+            margin: 150px 600px;
+        }
+        .bac2 a{
+border-radius:50% ;
+ width: 150px;
+ height: 150px;
+ background-color:rgb(64, 111, 239);
+ color: rgb(234, 234, 241);
+ font-size: 25px;
+ padding: 15px;
+ margin-left: 15px;
+        }
+       
+        .bac2-h{
+            margin-top: 25px;
+            text-align: center;
+            color: rgb(150, 148, 148);
+        }
+        /* Backgrond End */
+    
